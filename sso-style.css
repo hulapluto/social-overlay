@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f5f5f5;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.card-bak {
+    background-color: #fff;
+    color: #424242;
+    -webkit-box-shadow: 2px 2px 9px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 2px 9px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-container {
+    /* width: 100%; */
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+}
+
+@media (max-width: 765px) {
+    .card-container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+figure {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40%;
+        flex: 0 0 40%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+}
+@media (max-width: 765px) {
+    figure {
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+        flex: auto;
+    width: 100%;
+    }
+}
+
+figure img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    max-width: 100%;
+}
+
+@media (max-width: 765px) {
+    figure img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}
+
+.social {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.social-icon {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.card-container_right-content {
+    -webkit-box-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+    padding: 30px 40px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+    /*needs height for space between to work*/
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .card-container_right-content {
+        max-width: 600px;
+        /* fix for ie flexbox overflow bug */
+    }
+}
+.card-container_right-content h1 {
+    font-weight: 600;
+}
+.card-container_right-content p {
+    padding: 10px 0;
+}
+.cta {
+    margin-top: auto;
+    background-color: gray;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+.cta:hover {
+    margin-top: auto;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.cta a, a:link {
+    text-decoration: none;
+}
+
+.cta2 {
+    background-color: gray;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+}
+.cta2 a, a:link {
+    text-decoration: none;
+}
+
+.card-pull {
+    width: 400px;
+    background-color: cadetblue;
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .card-pull_title {
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: white;
+  }
